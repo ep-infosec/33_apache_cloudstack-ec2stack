@@ -1,0 +1,9 @@
+{% extends "response.xml" %}
+{% block response_content %}
+   <vpc>
+      <vpcId>{{ response.id }}</vpcId>
+      <state>{{ response.state }}</state>
+      <cidrBlock>{{ response.cidr }}</cidrBlock>
+      <tagSet/>
+   </vpc>
+{% endblock %}
